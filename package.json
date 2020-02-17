@@ -1,5 +1,5 @@
 {
-  "name": "misophonia",
+  "name": "phon",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "soundbank-reverb": "^1.1.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
