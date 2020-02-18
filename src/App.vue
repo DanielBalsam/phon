@@ -10,7 +10,7 @@
       browser does not fully support. to use phon
       we recommend downloading Brave ❤️
     </div>
-    <template v-if="loading">
+    <template v-else-if="loading">
       Loading...
     </template>
     <template v-else>
