@@ -714,7 +714,7 @@ export default {
     },
 
     toggleChannelMute(channel) {
-      channel.queueMuted = !channel.muted
+      channel.muted = !channel.muted;
     },
 
     toggleChannelSolo(channel) {
