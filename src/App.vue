@@ -581,6 +581,10 @@ export default {
   },
 
   created: async function() {
+    const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+    if (iOS) return;
+
     document.addEventListener('copy', this.handleCopy);
     document.addEventListener('paste', this.handlePaste);
     window.addEventListener('keydown', this.handleKeyPress);
