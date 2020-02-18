@@ -199,7 +199,7 @@
               />
             </div>
           </div>
-          <div class="setting">
+          <!-- <div class="setting">
             <div class="setting__label">
               Reverb Size
             </div>
@@ -243,7 +243,7 @@
                 class="slider"
               >
             </div>
-          </div>
+          </div> -->
           <template v-if="selectedChannel.instrument.type === INSTRUMENT_TYPE_SYNTH">
             <div class="setting__title">
               Instrument Settings
