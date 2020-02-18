@@ -5,6 +5,11 @@
       to use phon please visit us on your desktop
       computer ❤️
     </div>
+    <div v-if="!audio">
+      phon requires the Web Audio API, which your
+      browser does not fully support. to use phon
+      we recommend downloading Brave ❤️
+    </div>
     <template v-if="loading">
       Loading...
     </template>
