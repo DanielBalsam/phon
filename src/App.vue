@@ -33,7 +33,6 @@
         <div class="flex-grow" />
         <div>
           <button
-            :class="{'settings__button--selected': !this.global.paused}"
             class="settings__button settings__button--solo"
             @click="saveBeat"
           >
@@ -51,6 +50,7 @@
         </div>
         <div>
           <button
+            :class="{'settings__button--selected': !this.global.paused}"
             class="settings__button settings__button--solo"
             @click="togglePlay"
           >

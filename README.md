@@ -2,6 +2,8 @@
 
 phon is a DAW (Digital Audio Workstation) written to run in the browser utilzing the Web Audio API and Vue.js. phon is in active development, and it will be a while before we're fully featured.
 
+[https://phon.fm/](https://phon.fm/)
+
 ## Project setup
 ```
 npm install
