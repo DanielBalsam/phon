@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <div class="mobile-only">
+      phon does not currently work on mobile,
+      to use phon please visit us on your desktop
+      computer ❤️
+    </div>
     <template v-if="loading">
       Loading...
     </template>
@@ -1457,5 +1462,25 @@ input[type=file] {
 label {
   display: inline-block;
   padding: 1px 7px 2px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .mobile-only {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: darken(#00565d, 11%);
+    z-index: 10;
+  }
 }
 </style>
