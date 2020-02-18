@@ -426,7 +426,8 @@ import {Synth, OSCILLATOR_TYPES} from './instruments/synth';
 import {SampleLibrary} from './instruments/sampleLibrary';
 import {mergeDeep} from './helpers/object';
 
-const audioContext = new AudioContext();
+let audioContext;
+if (window.AudioContext) audioContext = new AudioContext();
 
 export default {
   data() {
